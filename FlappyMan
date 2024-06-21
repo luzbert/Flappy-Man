@@ -51,3 +51,100 @@ public class FlappyMan extends JPanel implements ActionListener, KeyListener, Mo
             this.img = img;
         }
     }
+Man man;
+    int velocityX = -4;
+    int velocityY = 0;
+    int gravity = 1;
+
+    ArrayList<Kryptonite> Kryptonites;
+    Random random = new Random();
+
+    Timer gameLoop;
+    Timer placeKryptoniteTimer;
+    boolean supermanDied = false;
+    double score = 0;
+
+    boolean isHomePage = true;
+    boolean isGameRunning = false;
+
+    JButton playButton;
+    JButton highScoreButton;
+
+    ArrayList<HighScore> highScores = new ArrayList<>();
+
+    class HighScore {
+        String name;
+        double score;
+
+        HighScore(String name, double score) {
+            this.name = name;
+            this.score = score;
+        }
+    }
+
+Man man;
+    int velocityX = -4;
+    int velocityY = 0;
+    int gravity = 1;
+
+    ArrayList<Kryptonite> Kryptonites;
+    Random random = new Random();
+
+    Timer gameLoop;
+    Timer placeKryptoniteTimer;
+    boolean supermanDied = false;
+    double score = 0;
+
+    boolean isHomePage = true;
+    boolean isGameRunning = false;
+
+    JButton playButton;
+    JButton highScoreButton;
+
+    ArrayList<HighScore> highScores = new ArrayList<>();
+
+    class HighScore {
+        String name;
+        double score;
+
+        HighScore(String name, double score) {
+            this.name = name;
+            this.score = score;
+        }
+    }
+
+  Man man;
+    int velocityX = -4;
+    int velocityY = 0;
+    int gravity = 1;
+
+    ArrayList<Kryptonite> Kryptonites;
+    Random random = new Random();
+
+    Timer gameLoop;
+    Timer placeKryptoniteTimer;
+    boolean supermanDied = false;
+    double score = 0;
+
+    boolean isHomePage = true;
+    boolean isGameRunning = false;
+
+    JButton playButton;
+    JButton highScoreButton;
+ArrayList<HighScore> highScores = new ArrayList<>();
+
+    class HighScore {
+        String name;
+        double score;
+
+        HighScore(String name, double score) {
+            this.name = name;
+            this.score = score;
+        }
+    }
+
+    JRadioButton supermanButton;
+    JRadioButton batmanButton;
+    JRadioButton jokerButton;
+    ButtonGroup characterGroup;
+    JPanel selectionPanel;
