@@ -1,0 +1,53 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Random;
+import javax.swing.*;
+
+public class FlappyMan extends JPanel implements ActionListener, KeyListener, MouseListener, MouseMotionListener {
+    int boardWidth = 460;
+    int boardHeight = 640;
+
+    Image backgroundImg;
+    Image supermanImg;
+    Image batmanImg;
+    Image jokerImg;
+    Image topKryptoniteImg;
+    Image bottomKryptoniteImg;
+
+    int manX = boardWidth / 8;
+    int manY = boardWidth / 2;
+    int manWidth = 62;
+    int manHeight = 56;
+
+    class Man {
+        int x = manX;
+        int y = manY;
+        int width = manWidth;
+        int height = manHeight;
+        Image img;
+
+        Man(Image img) {
+            this.img = img;
+        }
+    }
+
+    int KryptoniteX = boardWidth;
+    int KryptoniteY = 0;
+    int KryptoniteWidth = 60;
+    int KryptoniteHeight = 512;
+
+    class Kryptonite {
+        int x = KryptoniteX;
+        int y = KryptoniteY;
+        int width = KryptoniteWidth;
+        int height = KryptoniteHeight;
+        Image img;
+        boolean passed = false;
+
+        Kryptonite(Image img) {
+            this.img = img;
+        }
+    }
