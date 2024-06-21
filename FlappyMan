@@ -20,7 +20,7 @@ public class FlappyMan extends JPanel implements ActionListener, KeyListener, Mo
     int manX = boardWidth / 8;
     int manY = boardWidth / 2;
     int manWidth = 62;
-    int manHeight = 56;
+    int manHeight = 58;
 
     class Man {
         int x = manX;
